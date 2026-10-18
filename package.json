@@ -1,0 +1,16 @@
+{
+  "name": "manifestation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Un mundo para tus deseos, un pequeño paso cada día.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "dev": "node --env-file-if-exists=.env --watch server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check public/catalog.js && node --check public/schema.js"
+  }
+}
